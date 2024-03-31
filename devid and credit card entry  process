@@ -1,0 +1,13 @@
+card_num = input("Enter your 16 digit debit card number seperate each 4 digit by a space ").replace(" ", "")
+
+counter = 0 
+card_number = ""
+
+for num in card_num:
+  counter += 1
+  if counter <= 12:
+    card_number += "*"
+  else:
+    card_number += num
+
+print(card_number)
